@@ -19,7 +19,7 @@ INSTALASI
    HF_TOKEN=hf_xxxxxxxxxxxxxxxxxxxxxxxx
 Cara dapat HF_TOKEN: daftar gratis di huggingface.co -> Settings -> Access Tokens -> New token (Read).
 Gunakan akun Instagram terpisah dari akun pribadi untuk menghindari pemblokiran.
-5. MENJALANKAN PROGRAM
+6. MENJALANKAN PROGRAM
 Saat program berjalan, Chrome akan terbuka otomatis untuk login Instagram.
 Jika muncul CAPTCHA atau pop-up, selesaikan secara manual di browser.
 Tekan Enter di terminal setelah berada di halaman utama Instagram.
