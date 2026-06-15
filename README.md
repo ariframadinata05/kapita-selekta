@@ -18,7 +18,7 @@ INSTALASI
 ---------
 1. Clone repository dan masuk ke folder:
 
-   git clone https://github.com/[username]/kapita-selekta-sentimen.git
+   git clone https://github.com/ariframadinata05/kapita-selekta.git
    cd kapita-selekta-sentimen
 
 2. Buat virtual environment:
