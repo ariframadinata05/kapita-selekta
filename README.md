@@ -31,7 +31,9 @@ CSV:
   hasil_sentimen_[ts].csv        -- data lengkap + hasil IndoBERT
   ringkasan_sentimen_[ts].csv    -- agregat sentimen per sumber
   top_keywords_[ts].csv          -- frekuensi kata kunci
+
 PNG:
+
   viz_wordcloud_gabungan_[ts].png
   viz_wordcloud_instagram_[ts].png
   viz_wordcloud_berita_[ts].png
@@ -39,6 +41,7 @@ PNG:
   viz_keyword_chart_[ts].png
   viz_confidence_dist_[ts].png
   viz_summary_card_[ts].png
+  
 MASALAH UMUM
 ChromeDriver error     -> pip install --upgrade webdriver-manager
 Model tidak terunduh   -> cek HF_TOKEN di .env dan koneksi internet
