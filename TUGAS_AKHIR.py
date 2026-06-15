@@ -35,7 +35,7 @@ HF_TOKEN = os.getenv("HF_TOKEN")
 # CONFIG
 # ==========================================
 IG_POST_URL    = "https://www.instagram.com/p/DZJcFuDympN/"
-COMMENTS_LIMIT = 1000
+COMMENTS_LIMIT = 10000
 SCROLL_PAUSE   = (0.3, 0.5)
 
 NEWS_SOURCES = [
@@ -176,7 +176,6 @@ label_map = {
 
 print("Model berhasil dimuat!\n")
 
-
 # ==========================================
 # CLEAN COMMENT
 # ==========================================
@@ -211,7 +210,6 @@ def clean_news_text(text):
     text = re.sub(r'http\S+', '', text)
     return text if len(text.split()) >= 5 else None
 
-
 # ==========================================
 # SENTIMENT ANALYSIS
 # ==========================================
@@ -240,9 +238,8 @@ def top_keywords(texts, top_n=20):
             counter.update(extract_keywords(text))
     return pd.DataFrame(counter.most_common(top_n), columns=["keyword", "frekuensi"])
 
-
 # ==========================================
-# SETUP CHROME ANTI-DETEKSI BOT
+# SETUP CHROME
 # ==========================================
 def get_driver():
     options = webdriver.ChromeOptions()
@@ -373,9 +370,7 @@ def load_all_comments(driver):
                 comment_container = containers[-1]
         except Exception:
             pass
-        # ==========================================
-        # KLIK "View all X comments" DULU SEBELUM SCROLL
-        # ==========================================
+
         print("  Mencari tombol 'View all comments'...")
         view_all_selectors = [
             "//span[contains(text(), 'View all') and contains(text(), 'comment')]",
